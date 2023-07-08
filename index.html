@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Notifications page</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section">
+        <header class="header">
+          <h2>Notifications <span class="unreads"></span></h2>
+          <button class="btn">Mark all as read</button>
+        </header>
+        <div class="notifications">
+          <article class="profile">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://www.chess.com/member/aeorherhe"
+                  class="profile-name"
+                  target="_blank"
+                >
+                  Mark Webber
+                </a>
+                reacted to your recent post
+                <span class="event">My first tournament today!</span>
+                <span class="unread-dot"></span>
+              </p>
+              <p>1m ago</p>
+            </div>
+          </article>
+          <article class="profile">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://lichess.org/@/aeorherhe"
+                  class="profile-name"
+                  target="_blank"
+                  >Angela Gray</a
+                >
+                followed you
+                <span class="unread-dot"></span>
+              </p>
+              <p>5m ago</p>
+            </div>
+          </article>
+          <article class="profile">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://www.chess.com/member/aeorherhe"
+                  target="_blank"
+                  class="profile-name"
+                >
+                  Jacob Thompson
+                </a>
+                has joined your group
+                <a
+                  href="https://www.chess.com/home"
+                  class="event"
+                  target="_blank"
+                  >Chess club</a
+                >
+                <span class="unread-dot"></span>
+              </p>
+              <p>1 day ago</p>
+            </div>
+          </article>
+          <article class="profile msg-received">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://lichess.org/@/aeorherhe"
+                  class="profile-name"
+                  target="_blank"
+                  >Rizky Hasanuddin</a
+                >
+                sent you a private message
+                <span class="unread-dot"></span>
+              </p>
+              <p>5 days ago</p>
+              <p class="private-msg">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </div>
+          </article>
+          <article class="profile event-img-profile">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message event-img-ctn">
+              <div class="event-msg">
+                <p>
+                  <a
+                    href="https://www.chess.com/member/aeorherhe"
+                    class="profile-name"
+                    target="_blank"
+                    >Kimberly Smith</a
+                  >
+                  commented on your picture
+                  <span class="unread-dot"></span>
+                </p>
+                <p>1 week ago</p>
+              </div>
+              <div class="event-img">
+                <img
+                  src="./assets/images/image-chess.webp"
+                  class="profile-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </article>
+          <article class="profile">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://lichess.org/@/aeorherhe"
+                  class="profile-name"
+                  target="_blank"
+                  >Nathan Peterson</a
+                >
+                reacted to your recent post
+                <span class="event">
+                  5 end-game strategies to increase your win rate</span
+                >
+                <span class="unread-dot"></span>
+              </p>
+              <p>2 weeks ago</p>
+            </div>
+          </article>
+          <article class="profile">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              class="profile-img"
+              alt=""
+            />
+            <div class="message">
+              <p>
+                <a
+                  href="https://www.chess.com/member/aeorherhe"
+                  class="profile-name"
+                  target="_blank"
+                >
+                  Anna Kim
+                </a>
+                has left the group
+                <a
+                  href="https://www.chess.com/home"
+                  class="event"
+                  target="_blank"
+                  >Chess club</a
+                >
+                <span class="unread-dot"></span>
+              </p>
+              <p>2 weeks ago</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <my-profile class="my-profile">
+      Challenge by :
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor....
+      </a>
+      Coded by :
+      <a href="https://aeorherhe.netlify.app" target="_blank"
+        >Abraham Orherhe</a
+      >
+      <div class="my-profile-icons">
+        <a href="https://www.facebook.com/aeorherhe" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/aeorherhe/" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://twitter.com/aeorherhe" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </my-profile>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

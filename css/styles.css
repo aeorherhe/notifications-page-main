@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* general variables */
+  --boxShadow: 0 0 5px rgb(250, 234, 230);
+  --boxShadow2: 0px 0px 1px 1px rgba(150, 150, 150, 0.3);
+  --transition: all 0.5s linear;
+  --border: 2px solid rgb(28, 231, 10);
+  --border2: 2px solid rgb(22, 22, 223);
+  --border3: 2px solid rgb(239, 15, 209);
+  --outline: 0.5px solid hsla(205, 33%, 63%, 0.4);
+
+  /* variables for this project */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  display: grid;
+  font-family: "Plus Jakarta Sans", "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100vh;
+  place-items: center;
+}
+
+p {
+  color: var(--Grayish-blue);
+}
+
+.main {
+  max-width: 50rem;
+}
+
+.section {
+  border-radius: 1rem;
+  box-shadow: 0 0 50px hsl(205, 33%, 90%);
+  padding: 1rem 1.5rem;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unreads {
+  background: var(--Blue);
+  border-radius: 0.6rem;
+  color: var(--White);
+  display: inline-block;
+  margin: 0 0.8rem;
+  padding: 0.1rem 0.9rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  outline: none;
+}
+
+.profile {
+  align-items: center;
+  background: var(--Very-light-grayish-blue);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.profile-img {
+  cursor: pointer;
+  width: 3.5rem;
+}
+
+.profile a {
+  text-decoration: none;
+}
+
+.profile a:hover {
+  color: var(--Blue);
+}
+
+.profile-name {
+  color: var(--Very-dark-blue);
+  font-weight: 700;
+}
+
+.event {
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.event:hover {
+  color: var(--Blue);
+}
+
+.unread-dot {
+  background-color: var(--Red);
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.7rem;
+  margin: 0 0.5rem;
+  width: 0.7rem;
+}
+
+/* private message */
+.profile.msg-received .profile-img {
+  align-self: flex-start;
+}
+
+.private-msg {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: var(--boxShadow2);
+  display: none;
+  margin: 1rem 0;
+  outline: var(--outline);
+  padding: 1rem;
+}
+
+.private-msg:hover {
+  background: var(--Light-grayish-blue-1);
+}
+
+.event-img-ctn {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* for js */
+.read .profile {
+  background: none;
+  outline: var(--outline);
+}
+
+.profile.read {
+  background: none;
+  outline: var(--outline);
+}
+
+.read .unread-dot {
+  display: none;
+}
+
+.show-msg .private-msg {
+  display: block;
+}
+
+/* footer styles */
+.my-profile {
+  background-color: var(--Very-dark-blue);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.my-profile > a {
+  cursor: pointer;
+  color: hsl(51, 79%, 45%);
+  text-decoration: none;
+}
+
+.my-profile-icons a {
+  cursor: pointer;
+  color: var(--White);
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .my-profile {
+    font-size: 12px;
+  }
+
+  .my-profile-icons a:first-of-type,
+  .my-profile-icons a:last-of-type {
+    display: none;
+  }
+}
